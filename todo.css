@@ -1,0 +1,62 @@
+body{
+    background-color:rgb(143, 134, 110);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width:15%;
+    height:15%;
+    position: relative;
+    margin-right:50rem;
+    border-radius: 50%;
+    position:relative;
+    animation:6s linear 1s infinite alternate none running leftMovement;
+    
+}
+@keyframes leftMovement {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50rem);
+    }
+}
+#todo{
+    background-color:rgb(237, 199, 97);
+    width:80%;
+    height:50%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    
+}
+
+
+
+
+.del{
+    margin:15px;
+}
+button{
+    background-color:black;
+    color:aliceblue;
+    font-weight: bold;
+    padding:3px;
+    border-radius:10px;
+}
+input{
+    padding:5px;
+    border-radius:30px;
+
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
